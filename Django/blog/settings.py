@@ -1,9 +1,8 @@
-
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = 'django-insecure-p^a4+hc1bu59al)xm3f-btlad^!%7-a-e9h&#l84)-(0j(9dv+'
+SECRET_KEY = 'django-insecure-6mlvhg^ko1@7znm87(tj7fdik96z-z401j4dbj_k$dn)t$#l#v'
 
 DEBUG = True
 
@@ -49,17 +48,10 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'blog.wsgi.application'
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'studentdb',
+        'NAME': 'usersdb',
         'USER': 'root',
         'PASSWORD': 'mano',
         'HOST': 'localhost',
